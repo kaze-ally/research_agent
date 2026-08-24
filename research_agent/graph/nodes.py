@@ -12,7 +12,7 @@ def get_llm():
     """Lazy-load the LLM."""
     global _llm
     if _llm is None:
-        _llm = ChatGroq(model="llama-3.3-70b-versatile", temperature=0.3)
+        _llm = ChatGroq(model="openai/gpt-oss-120b", temperature=0.3)
     return _llm
 
 
